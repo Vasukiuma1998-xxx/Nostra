@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Nostra</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- offbar -->
+    <div class="offerbar">
+        <p >Sign Up and <b>GET 20% OFF </b>for your first Order
+            <i id="close" class="fa-solid fa-xmark" style="color: #ffffff;margin-left: 10%; cursor: pointer;"></i>
+        </p>
+    </div>
+
+    <nav class=" bg-white  p-5 flex items-center justify-between  sticky top-0 z-10">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-7 hidden md:flex">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">New Arrival</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Collections</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- side navbar -->
+    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; left: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer text-white">x</p>
+        </div>
+
+        <ul class="flex flex-col gap-10 items-start text-white p-5">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">New Arrival</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Collections</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact us</a></li>
+        </ul>
+    </section>
+
+
+    <section>
+        <div class="container mx-auto ">
+            <div class="relative">
+
+                <ul id="slider">
+                    <li class="relative">
+                        <img class="h-full object-cover " src="./image/slide1.jpg">
+                        <div class="absolute bg-black bg-opacity-50 top-0 left-0 h-full w-full flex flex-col justify-center  gap-10">
+                            <div>
+                                <h2 class="text-5xl  font-bold text-white my-auto w-full text-center">Level up your style
+                                    with our</h2>
+                            </div>
+
+                            <div>
+
+                                <p class="text-2xl font-bold text-white my-auto w-full text-center">Summer Collections
+                                </p>
+                            </div>
+                            <div>
+                                <button class="text-2xl font-bold text-white my-auto w-full text-center ">Shop Now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative hidden">
+                        <img class="h-full object-cover" src="./image/slide2.webp">
+                        <div class="absolute  bg-black bg-opacity-50 top-0 left-0 h-full w-full flex flex-col justify-center align-middle gap-10">
+                            <div>
+                                <h2 class="text-5xl font-bold text-white my-auto w-full text-center">Level up your style
+                                    with our</h2>
+                            </div>
+
+                            <div>
+
+                                <p class="text-2xl font-bold text-white my-auto w-full text-center">Summer Collections
+                                </p>
+                            </div>
+                            <div>
+                                <button class="text-2xl font-bold text-white my-auto w-full text-center ">Shop Now</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+
+
+                <div  id="slidebtn" class="absolute  px-10 flex h-full w-full top-0 left-0">
+
+                    <div class="my-auto  w-full flex justify-between">
+                        <button  onclick="prev()"class="bg-white p-3 rounded-full bg-opacity-80 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                        <button onclick="next()"class="bg-white p-3 rounded-full bg-opacity-80 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
