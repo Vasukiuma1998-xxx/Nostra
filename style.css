@@ -40,6 +40,103 @@ body{
 }
 
 
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+.limited-offer{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-color: rgb(27, 26, 31);
+color: white;
+padding: 20px;
+gap: 10px;
+}
+
+.limited-offer-text h2{
+font-size: 50px;
+}
+.limited-offer-text h4{
+font-size: 30px;
+}
+.limited-offer-text button{
+padding-left: 8%;
+padding-right: 8%;
+padding-top: 3%;
+padding-bottom: 3%;
+margin-top: 5px;
+font-size: 1.2vw;
+border-radius: 10px;
+color:black;
+background-color: white;
+border: none;
+font-weight: bold;
+}
+.container img{
+    width: 100%;
+    height:500px;
+}
+/* new arrival */
+
+.newarrival-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.newimage{
+    position: relative;
+}
+.newimage img{
+    border-radius: 2%;
+    width: 20vw;
+    height: 20vw;
+}
+
+.overlay{
+    border-radius: 2%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    opacity: 0.6;
+    top: 0;
+}
+
+.overlay button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 18%;
+    color:black;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+.divider-section{
+    display: flex;
+}
+.aside{
+    flex-basis: 25%;
+    background-color: red;
+    position:relative;
+    font-size: 2vw;
+}
+
+
 @media screen and (max-width: 680px) {
     .offerbar {
         font-size: 12px;
@@ -76,6 +173,14 @@ font-size: 20px;
     .service-container2{
         font-size: 5px;
     }
+    .limited-offer-text h2{
+        font-size: 15px;
+    }
+    .limited-offer-text h4{
+        font-size: 7px;
+    }
+   
+   
 }
 @media screen and (max-width: 480px) {
     .service-container1 p{
@@ -84,8 +189,8 @@ font-size: 20px;
     .service-container2{
         font-size: 4px;
     }
-}
-.container img{
-    width: 100%;
-    height:500px;
+    .service-container2 i{
+        font-size: 10px;
+    }
+    
 }
