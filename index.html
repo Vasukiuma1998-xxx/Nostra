@@ -34,30 +34,30 @@
         <ul class="flex gap-7 hidden md:flex">
             <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
             <li><a class="hover:underline hover:text-black" href="#newarrivalsection">New Arrival</a></li>
-            <li><a class="hover:underline hover:text-black" href="contact.html">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-black" href="#most-wanted">Most Wanted</a></li>
             <li><a class="hover:underline hover:text-black" href="contact.html">Collections</a></li>
             <li><a class="hover:underline hover:text-black" href="contact.html">Contact us</a></li>
         </ul>
     </nav>
 
     <!-- side navbar -->
-    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000"
-        style="width: 50%; height: 100vh; left: -50%;">
+    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000" 
+    style="width: 50%; height: 100vh; left: -50%;">
         <div class="text-right p-5">
             <p id="closenav" class="inline cursor-pointer text-white">x</p>
         </div>
 
         <ul class="flex flex-col gap-10 items-start text-white p-5">
-            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
-            <li><a class="hover:underline hover:text-black" href="#newarrivalsection">New Arrival</a></li>
-            <li><a class="hover:underline hover:text-black" href="contact.html">Most Wanted</a></li>
-            <li><a class="hover:underline hover:text-black" href="contact.html">Collections</a></li>
-            <li><a class="hover:underline hover:text-black" href="contact.html">Contact us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#newarrivalsection">New Arrival</a></li>
+            <li><a href="#most-wanted">Most Wanted</a></li>
+            <li><a href="contact.html">Collections</a></li>
+            <li><a href="contact.html">Contact us</a></li>
         </ul>
     </section>
 
 
-    <section >
+    <section>
         <div class="container mx-auto ">
             <div class="relative ">
 
@@ -129,7 +129,41 @@
             </div>
         </div>
     </section>
-
+    <!-- brands -->
+    
+    <section class="p-5">
+        <h2 class="text-2xl font-bold">Brands</h2>
+        <div class="brand-container">
+            <div class="brands-item">
+                <img src="./image/puma.jpeg">
+                <p>Puma</p>
+            </div>
+            <div class="brands-item">
+                <img src="./image/udhaya.png">
+                <p>Udhaya</p>
+            </div>
+            <div class="brands-item">
+                <img src="./image/adidas.png">
+                <p>Adidas</p>
+            </div>
+            <div class="brands-item">
+                <img src="./image/womens.webp">
+                <p>Womens</p>
+            </div>
+            <div class="brands-item">
+                <img src="./image/brand.webp">
+                <p>Unique</p>
+            </div>
+            <div class="brands-item">
+                <img src="./image/boutique.jpg">
+                <p>Boutique</p>
+            </div>
+            <div class="brands-item">
+                <img src="./image/fashion.avif">
+                <p>Fashion</p>
+            </div>
+        </div>
+    </section>
     <!-- service section -->
     <div class="service p-5">
         <div class="service-container1 ">
@@ -171,7 +205,7 @@
 
     <!-- new arrival -->
     <section id="newarrivalsection" class="newarrival px-5">
-        <h2 class="text-3xl font-bold">New Arrival</h2>
+        <h2 class="text-2xl font-bold">New Arrival</h2>
         <div class="newarrival-container">
             <div class="newimage">
                 <img src="./image/dress1.jpg">
@@ -210,64 +244,86 @@
     </section>
 
     <!-- component -->
-    <div class="flex flex-col bg-white p-5">
-        <h2 class="text-3xl font-bold mb-2">Most Wanted</h2>
+    <div id="most-wanted" class="flex flex-col bg-white p-5">
+        <h2 class="text-2xl font-bold mb-2">Most Wanted</h2>
         <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
-            <div class=" flex flex-nowrap ">
-                <div class="inline-block ">
-                    <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <img src="./image/img1.webp">
-                    </div>
-                </div>
-                <div class="inline-block px-3">
-                    <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <img class="h-full"src="./image/dress4.jpg">
-                    </div>
-                </div>
-                <div class="inline-block px-3">
+            <div class="flex flex-nowrap">
+                <div class="most-wanted-container inline-block px-3">
                     <div
                         class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <img src="./image/dress5.jpg">
+                        <img src="./image/img1.webp" alt="Image 1">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
+
+
                     </div>
                 </div>
-                <div class="inline-block px-3">
+                <div class="most-wanted-container inline-block px-3">
                     <div
                         class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <img class="h-full" src="./image/drs1.jpg">
+                        <img class="h-full" src="./image/dress4.jpg" alt="Dress 4">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
                     </div>
                 </div>
-                <div class="inline-block px-3">
+                <div class="most-wanted-container inline-block px-3">
                     <div
                         class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                   <img src="./image/dress1.jpg">
+                        <img src="./image/dress5.jpg" alt="Dress 5">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
                     </div>
                 </div>
-                <div class="inline-block px-3">
+                <div class="most-wanted-container inline-block px-3">
                     <div
                         class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <img src="./image/dress2.jpg">
+                        <img class="h-full" src="./image/drs1.jpg" alt="Dress 1">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
                     </div>
                 </div>
-                <div class="inline-block px-3">
+                <div class="most-wanted-container inline-block px-3">
                     <div
                         class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                        <img src="./image/dress5.jpg">
+                        <img src="./image/dress1.jpg" alt="Dress 1">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
                     </div>
                 </div>
-                <div class="inline-block px-3">
+                <div class="most-wanted-container inline-block px-3">
                     <div
                         class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                        <img class="h-full"src="./image/dress4.jpg">
+                        <img src="./image/dress2.jpg" alt="Dress 2">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="most-wanted-container inline-block px-3">
+                    <div
+                        class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                        <img src="./image/dress5.jpg" alt="Dress 5">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="most-wanted-container inline-block px-3">
+                    <div
+                        class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                        <img class="h-full" src="./image/dress4.jpg" alt="Dress 4">
+                        <p class="sale-overlay">Sale</p>
+                        <i class="like fa-regular fa-heart"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- limited offer -->
     <section class="p-5">
         <div class="limited-offer">
             <div class="limited-offer-img">
-               <img src="./image/offer2.jpg">
+                <img src="./image/offer2.jpg">
             </div>
             <div class="limited-offer-text">
                 <h2>Limited Offer</h2>

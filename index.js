@@ -51,21 +51,12 @@ function showSlide(){
     }
 }
 
-window.addEventListener("scroll",function(){
-    var elements = this.document.querySelectorAll(".initial-scroll-animate")
-    elements.forEach((el)=>{
-        windowHeight = window.innerHeight
-     var elbound = el.getBoundingClientRect()
-   
+var likeButtons = document.querySelectorAll(".like");
 
-     console.log(windowHeight)
-     console.log(elbound.top)
-     if(windowHeight>elbound.top-100){
-        console.log("Hi")
-    el.classList.remove("reveal-scroll-animate")
-
-    }
-    
-})
-    
-})
+        likeButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                this.classList.toggle("liked");
+                this.classList.toggle("fa-solid");
+                this.classList.toggle("fa-regular");
+            });
+        });
